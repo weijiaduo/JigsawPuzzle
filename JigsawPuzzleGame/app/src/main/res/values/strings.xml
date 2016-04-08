@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JigsawPuzzleGame</string>
+    <string name="steps">步数：</string>
+    <string name="times">时间：</string>
+</resources>

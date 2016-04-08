@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_layout_shape"
+    android:orientation="vertical" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/steps"/>
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/circle"
+            android:textSize="15sp"
+            android:text="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/times"/>
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/circle"
+            android:textSize="15sp"
+            android:text="0"/>
+    </LinearLayout>
+
+    <com.promote.jigsawpuzzleview.JigsawPuzzleLayout
+        android:id="@+id/id_gameview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+    </com.promote.jigsawpuzzleview.JigsawPuzzleLayout>
+
+    <!--
+    <com.promote.jigsawpuzzleview.PuzzleGridView
+        android:id="@+id/id_gameview"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:verticalSpacing="10dip"
+        android:horizontalSpacing="10dip"
+        android:gravity="center"
+        android:numColumns="3" >
+    </com.promote.jigsawpuzzleview.PuzzleGridView>
+    -->
+
+    <com.promote.jigsawpuzzleview.MyHorizontalScrollView
+        android:id="@+id/id_horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:fillViewport="true"
+        android:fadingEdge="none"
+        android:background="@drawable/scroll_layout_shape"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.promote.jigsawpuzzleview.MyHorizontalScrollView>
+
+
+</LinearLayout>
